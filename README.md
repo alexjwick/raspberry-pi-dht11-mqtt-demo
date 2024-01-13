@@ -27,3 +27,20 @@ I used a DHT11 sensor with a breakout board. The breakout board has 3 pins: VCC,
 - VCC to pin 1 (3.3V)
 - GROUND to pin 6 (GND)
 - DATA to pin 11 (GPIO 17)
+
+### Software
+
+#### Creating a virtual environment
+
+I used a virtual environment to manage the dependencies for this project. To create a virtual environment, I used the following commands:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+The .venv directory is where the virtual environment is stored. It is ignored by git since it is included in the .gitignore file. The second command activates the virtual environment. To deactivate the virtual environment, use the following command:
+
+```bash
+deactivate
+```
