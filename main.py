@@ -12,16 +12,16 @@ instance = dht11.DHT11(pin=17)
 
 try:
 	while True:
-	    result = instance.read()
-	    if result.is_valid():
-	        print("Last valid input: " + str(datetime.datetime.now()))
+		result = instance.read()
+		if result.is_valid():
+			print("Last valid input: " + str(datetime.datetime.now()))
 
-	        print("Temperature: %-3.1f C" % result.temperature)
-		print("Temperature: %-3.1f C" % (result.temperature * 9/5) + 32)
-	        print("Humidity: %-3.1f %%" % result.humidity)
-
-	    time.sleep(6)
+			print("Temperature: %-3.1f C" % result.temperature)
+			print("Temperature: %-3.1f C" % (result.temperature * 9/5) + 32)
+			print("Humidity: %-3.1f %%" % result.humidity)
+		
+		time.sleep(6)
 
 except KeyboardInterrupt:
-    print("Cleanup")
-    GPIO.cleanup()
+	print("Cleanup")
+	GPIO.cleanup()
