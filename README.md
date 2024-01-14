@@ -26,7 +26,7 @@ I used a DHT11 sensor with a breakout board. The breakout board has 3 pins: VCC,
 
 - VCC to pin 1 (3.3V)
 - GROUND to pin 6 (GND)
-- DATA to pin 11 (GPIO 17)
+- DATA to pin 4 (GPIO 4)
 
 ### Software
 
