@@ -9,8 +9,10 @@ I made this project to gain experience configuring, running code, and interfacin
 ## Hardware
 
 - Raspberry Pi 3B+
-- DHT11 sensor with breakout board
+- DHT11 sensor with a breakout board
 - 3 jumper wires
+
+I got my DHT11 with a breakoutboard and jumper wires from [here](https://www.amazon.com/BOJACK-Temperature-Humidity-Digital-Raspberry/dp/B09TKTZMSL).
 
 ## Software
 
@@ -22,11 +24,11 @@ Coming soon...
 
 #### Connecting the DHT11 sensor to the Raspberry Pi
 
-I used a DHT11 sensor with a breakout board. The breakout board has 3 pins: VCC, GROUND and DATA, marked with +, - and out respectively. Each pin is connected to a pin on the Raspberry Pi by a jumper wire: the VCC pin is connected to the 3.3V pin, the GROUND pin is connected to a GND pin, and the DATA pin is connected to any available GPIO pin. I used the following connections:
+I used a DHT11 sensor with a breakout board. The breakout board has 3 pins: VCC, DATA and GROUND, marked with +, out, and - respectively. Each pin is connected to a pin on the Raspberry Pi by a jumper wire: the VCC pin is connected to the 3.3V pin, the GROUND pin is connected to a GND pin, and the DATA pin is connected to any available GPIO pin. I used the following connections:
 
 - VCC to pin 1 (3.3V)
 - GROUND to pin 6 (GND)
-- DATA to pin 4 (GPIO 4)
+- DATA to pin 7 (GPIO 4)
 
 ### Software
 
