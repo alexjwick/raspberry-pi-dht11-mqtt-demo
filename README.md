@@ -6,7 +6,7 @@ This is a simple project to read temperature and humidity from a DHT11 sensor an
 
 I made this project to gain experience configuring, running code, and interfacing with peripherals (such as a DHT11 sensor) on lightweight computers (such as a Raspberry Pi). I also wanted to learn how to use MQTT to send data from a device to a server.
 
-## Hardware
+## Hardware Requirements
 
 - Raspberry Pi 3B+
 - DHT11 sensor with a breakout board
@@ -16,7 +16,8 @@ I got my DHT11 with a breakoutboard and jumper wires from [here](https://www.ama
 
 ## Software
 
-Coming soon...
+- Python 3.9.2
+- Eclipse Mosquitto 2.0.11
 
 ## Installation
 
@@ -32,6 +33,22 @@ I used a DHT11 sensor with a breakout board. The breakout board has 3 pins: VCC,
 
 ### Software
 
+#### Installing Python
+
+I used Python 3.9.2 for this project. To install Python 3.9.2, use the following command:
+
+```bash
+sudo apt install python3.9
+```
+
+#### Installing Eclipse Mosquitto
+
+I used Eclipse Mosquitto 2.0.11 for this project. To install Eclipse Mosquitto 2.0.11, use the following command:
+
+```bash
+sudo apt install mosquitto
+```
+
 #### Creating a virtual environment
 
 I used a virtual environment to manage the dependencies for this project. To create a virtual environment, I used the following commands:
@@ -45,4 +62,12 @@ The .venv directory is where the virtual environment is stored. It is ignored by
 
 ```bash
 deactivate
+```
+
+#### Installing dependencies
+
+To install the dependencies for this project, use the following command:
+
+```bash
+pip install -r requirements.txt
 ```
