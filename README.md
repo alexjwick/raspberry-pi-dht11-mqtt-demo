@@ -1,4 +1,4 @@
-# temperature-and-humidity-sensor
+# Raspberry Pi DHT11 MQTT Demo
 
 ## Description
 
