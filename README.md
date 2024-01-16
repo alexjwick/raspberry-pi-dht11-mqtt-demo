@@ -1,10 +1,10 @@
 # Raspberry Pi DHT11 MQTT Demo
 
-This is a simple project to read temperature and humidity from a DHT11 sensor and send it to an MQTT broker. The MQTT broker is running on a Raspberry Pi 3B+.
+This is a simple project that reads temperature and humidity from a DHT11 sensor and sends it to an MQTT broker. The MQTT broker is running on a Raspberry Pi 3B+.
 
 I made this project to gain experience configuring, running code, and interfacing with peripherals (such as a DHT11 sensor) on lightweight computers (such as a Raspberry Pi). I also wanted to learn how to use MQTT to send data from a device to a server.
 
-Currently, the both publisher and sole subscriber in this project are running on the same Raspberry Pi. In the future, I plan to publish MQTT messages to a subscriber in the cloud so that the temperature and humidity data can be stored in a cloud database. I also plan to add a web interface to display the temperature and humidity data over time.
+Currently, both the publisher and sole subscriber in this project are running on the same Raspberry Pi. In the future, I plan to publish MQTT messages to a subscriber in the cloud so that the temperature and humidity data can be stored in a cloud database. I also plan to add a web interface to display the temperature and humidity data over time.
 
 ## Table of Contents
 
