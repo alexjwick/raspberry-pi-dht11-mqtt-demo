@@ -20,7 +20,7 @@ while True:
         client.publish("sensor", message)
         time.sleep(5)
     except KeyboardInterrupt:
-        print("Exiting")
+        print("KeyboardInterrupt, exiting...")
         break
     except Exception as e:
         print(e)
