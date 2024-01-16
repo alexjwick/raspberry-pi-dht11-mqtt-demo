@@ -32,7 +32,7 @@ Currently, the both publisher and sole subscriber in this project are running on
 
 I got my DHT11 with a breakoutboard and jumper wires from [here](https://www.amazon.com/BOJACK-Temperature-Humidity-Digital-Raspberry/dp/B09TKTZMSL).
 
-<img src="hardware.jpg" alt="raspberry pi 3b+, dht11 sensor with breakout board, and 3 jumper wires" width="100%"/>
+<img src="images/hardware.jpg" alt="raspberry pi 3b+, dht11 sensor with breakout board, and 3 jumper wires" width="480"/>
 
 ## Software
 
@@ -122,7 +122,7 @@ The MQTT subscriber will subscribe to the topic "sensor" and print the temperatu
 
 Run these scripts in separate terminal windows to see the MQTT publisher and subscriber in action:
 
-<img src="rpi_screenshot.png" alt="raspberry pi screenshot with 2 terminal windows open showing the mqtt publisher and subscriber" width="100%"/>
+<img src="images/rpi_screenshot.png" alt="raspberry pi screenshot with 2 terminal windows open showing the mqtt publisher and subscriber" width="100%"/>
 
 ## Future Work
 
