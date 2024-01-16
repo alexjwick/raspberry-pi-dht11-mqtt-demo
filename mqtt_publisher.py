@@ -15,7 +15,9 @@ while True:
     try:
         humidity, temperature = sensor.get_reading()
         datetime = time.strftime("%Y-%m-%d %H:%M:%S")
-        client.publish("sensor", "{0} Temp: {1:0.1f}*C Humidity: {2:0.1f}%".format(datetime, temperature, humidity))
+        message = "{0} Temp: {1:0.1f}*C Humidity: {2:0.1f}%".format(datetime, temperature, humidity)
+        print(message)
+        client.publish("sensor", message)
         time.sleep(5)
     except KeyboardInterrupt:
         print("Exiting")
